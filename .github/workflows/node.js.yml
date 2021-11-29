@@ -22,9 +22,8 @@ jobs:
 
          script: |
           cd nodetest21
-          git@github.com:aannkur/nodetest21.git
-          cd nodetest        
-           source /usr/local/nvm/nvm.sh
+          git pull origin main
+          cd nodetest21      
               npm install
               npm install pm2 -g
               pm2 restart Index.js
