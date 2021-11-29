@@ -21,12 +21,10 @@ jobs:
          username: ${{secrets.SSH_USERNAME}}
 
          script: |
-          rm -rf test
-          mkdir test
-          cd test
+          cd nodetest21
           git@github.com:aannkur/nodetest21.git
           cd nodetest        
-           source ~/.nvm/nvm.sh
+           source /usr/local/nvm/nvm.sh
               npm install
               npm install pm2 -g
               pm2 restart Index.js
