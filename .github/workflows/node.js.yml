@@ -25,5 +25,5 @@ jobs:
           git pull origin main
           cd nodetest21      
               npm install
-              npm install pm2 -g
-              pm2 restart Index.js
+              npm install pm2 
+              pm2 restart index.js
